@@ -1,0 +1,245 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 15px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+.nav a:hover {
+  background-color: #e76f51;
+  border-radius: 5px;
+}
+
+.nav .active {
+  background-color: green;
+  border-radius: 5px;
+}
+
+.hero {
+  text-align: center;
+  color: black;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+.hero button {
+  background-color: #f4a261;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+.hero button:hover {
+  background-color: #e76f51;
+}
+
+/* Inspiration Section */
+.inspiration {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+.inspiration img {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px 0;
+}
+.inspiration p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.about-section h1 {
+  /* text-align: center; */
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.about-section img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid black;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Video Section */
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.video-section h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.video-section iframe {
+  width: 80%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-top: 20px;
+}
+
+/* Contact me Section */
+.contact-page {
+  text-align: center;
+  background: black;
+  color: white;
+  padding: 50px 20px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.contact-page h2 {
+  margin-bottom: 10px;
+}
+.contact-page p {
+  font-size: 20px;
+}
+.icons a {
+  color: white;
+  font-size: 24px;
+  margin: 10px;
+}
+.icons a:hover {
+  color: #f4a261;
+}
+
+/* Kindness Message Section */
+.pledge-container {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pledge-container h1 {
+  color: black;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.pledge-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #f4a261;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #e76f51;
+}
+
+/* Messages Section */
+.messages-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.messages-container h2 {
+  color: black;
+  font-size: 2rem;
+}
+
+#messagesList {
+  list-style: none;
+  padding: 0;
+}
+
+#messagesList li {
+  background: #f4f4f4;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: left;
+}
