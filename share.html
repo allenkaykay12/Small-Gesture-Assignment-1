@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Send Kindness</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="video.html">Watch</a>
+      <!-- <a href="gallery.html">Gallery</a> -->
+      <a href="share.html" class="active">Send Kindness</a>
+    </div>
+
+    <!-- Kindness Message Section -->
+    <div class="pledge-container">
+      <h1>Let's Spread Kindness</h1>
+      <p>Share kind words with others!</p>
+
+      <!-- Message Form -->
+      <form id="messageForm">
+        <label for="sender">Your Name</label>
+        <input
+          type="text"
+          id="sender"
+          name="sender"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="receiver">Recipient</label>
+        <input
+          type="text"
+          id="receiver"
+          name="receiver"
+          placeholder="Enter the receiver's name"
+          required
+        />
+
+        <label for="message">Write them a short message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Your message..."
+          required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Display Messages -->
+    <div class="messages-container">
+      <h2>Messages Shared</h2>
+      <ul id="messagesList"></ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-page">
+      <h2>Stay Connected</h2>
+      <p>Do have a story to share? Want to connect? Reach out!</p>
+      <div class="icons">
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="mailto:allenkayesu10@gmail.com"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/allenkayesu/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </div>
+  </body>
+</html>
