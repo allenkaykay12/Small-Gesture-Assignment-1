@@ -1,0 +1,113 @@
+/* Kindness Form Section */
+.container {
+  max-width: 600px;
+  background: white;
+  padding: 30px;
+  margin: 80px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.container p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Button Styling */
+button {
+  background-color: #f4a261;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #e76f51;
+}
+
+/* Messages Section */
+.messages-container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.messages-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+ul#messagesList {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#messagesList li {
+  background: #fff7e6;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 5px solid #f4a261;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    margin: 60px auto;
+  }
+
+  .messages-container {
+    max-width: 90%;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="kindness.css" />
     <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat"
@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <title>Send Kindness</title>
+    <title>share</title>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -23,54 +23,70 @@
       <a href="./index.html">Home</a>
       <a href="./about.html">About</a>
       <a href="./video.html">Watch</a>
-      <!-- <a href="gallery.html">Gallery</a> -->
       <a href="./share.html" class="active">Send Kindness</a>
+      <!-- <a href="./test.html">Gallery</a> -->
     </div>
 
-    <!-- Kindness Message Section -->
-    <div class="pledge-container">
+    <!-- Kindness Message & Testimony Section -->
+    <div class="container">
       <h1>Let's Spread Kindness</h1>
-      <p>Share kind words with others!</p>
+      <p>Share kind words or tell your story of kindness!</p>
 
-      <!-- Message Form -->
-      <form id="messageForm">
-        <label for="sender">Your Name</label>
+      <!-- Message & Testimony Form -->
+      <form id="kindnessForm">
+        <label for="name">Your Name</label>
         <input
           type="text"
-          id="sender"
-          name="sender"
+          id="name"
+          name="name"
           placeholder="Enter your name"
           required
         />
 
-        <label for="receiver">Recipient</label>
-        <input
-          type="text"
-          id="receiver"
-          name="receiver"
-          placeholder="Enter the receiver's name"
-          required
-        />
+        <label for="type">What would you like to share?</label>
+        <select id="type" name="type" required>
+          <option value="">Select an option</option>
+          <option value="message">A Kind Message to Someone</option>
+          <option value="testimony">A Personal Story About Kindness</option>
+        </select>
 
-        <label for="message">Write them a short message:</label>
+        <div id="recipientField">
+          <label for="receiver">Recipient's Name</label>
+          <input
+            type="text"
+            id="receiver"
+            name="receiver"
+            placeholder="Enter the recipient's name"
+          />
+        </div>
+
+        <label for="content">Write your message or story:</label>
         <textarea
-          id="message"
-          name="message"
+          id="content"
+          name="content"
           rows="4"
-          placeholder="Your message..."
+          placeholder="Your message or story..."
           required
         ></textarea>
 
-        <button type="submit">Send Message</button>
+        <div id="testimonyOptions" style="display: none">
+          <label for="anonymous">Do you want to remain anonymous?</label>
+          <select id="anonymous" name="anonymous">
+            <option value="">Select an option</option>
+            <option value="no">No, you can show my name</option>
+            <option value="yes">Yes, keep it anonymous</option>
+          </select>
+        </div>
+
+        <button type="submit">Submit</button>
       </form>
     </div>
 
-    <!-- Display Messages -->
+    <!-- Display Messages & Testimonies -->
     <div class="messages-container">
-      <h2>Messages Shared</h2>
+      <h2>Stories & Messages Shared</h2>
       <ul id="messagesList"></ul>
     </div>
-
     <!-- Contact Section -->
     <div class="contact-page">
       <h2>Stay Connected</h2>
@@ -82,10 +98,13 @@
         <a href="mailto:allenkayesu10@gmail.com"
           ><i class="fa-solid fa-envelope"></i
         ></a>
+
         <a href="https://www.linkedin.com/in/allenkayesu/" target="_blank"
           ><i class="fa-brands fa-linkedin"></i
         ></a>
       </div>
     </div>
+
+    <script src="script1.js"></script>
   </body>
 </html>
