@@ -1,1 +1,3 @@
 # Small-Gesture-Assignment-1
+
+The “Small Gesture” project is a web-based initiative aimed at encouraging small acts of kindness. Personal experiences served as the inspiration for this project. This project's main aim is to show the power of simple, everyday acts of kindness in making a positive impact on individuals. Something as simple as checking in on someone who may be feeling lonely or sending a thoughtful message can truly brighten someone's day. "Small Gesture" combines web design and dynamic data handling to create a platform where users can share messages and testimonies of kindness. As a way to inspire more and more people to spread kindness and positivity in their daily lives. 
