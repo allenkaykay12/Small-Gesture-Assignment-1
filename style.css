@@ -125,11 +125,11 @@ body {
 /* Video Section */
 .video-section {
   display: flex;
+  margin-top: 65px;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 0 66px;
   text-align: center;
-  /* padding: 30px 20px; */
   aspect-ratio: 16/9; /* Allows the video to scale properly */
 }
 
@@ -153,8 +153,7 @@ body {
   text-align: center;
   background: black;
   color: white;
-  margin-top: 50px;
-  padding: 30px 20px;
+  padding: 34px 17px;
 }
 .icons {
   display: flex;
