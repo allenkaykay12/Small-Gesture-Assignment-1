@@ -65,7 +65,7 @@ async function loadTestimonies() {
 
     if (row[2] == "message") {
       newItem = document.createElement("li");
-      newItem.innerHTML = `From: <strong>${displayName}</strong> to: <strong>${receiver}: </strong> ${message}`;
+      newItem.innerHTML = `From: <strong>${displayName}</strong> to: <strong>${receiver} -> </strong> ${message}`;
       messagesList.appendChild(newItem);
     } else {
       newItem = document.createElement("li");
