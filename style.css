@@ -1,10 +1,29 @@
-body {
-  font-family: "Montserrat", sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
   background-color: #fffffff5;
   color: #333;
   overflow-x: hidden;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin: 0.8rem 0;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .nav {
@@ -14,14 +33,16 @@ body {
   width: 100%;
   justify-content: center;
   background-color: black;
-  padding: 8px;
-  flex-wrap: wrap;
+  padding: 0.8rem 5%;
+  z-index: 1000;
+  gap: 1rem;
 }
 .nav a {
   color: white;
   text-decoration: none;
   padding: 10px 20px;
   margin: 0 10px;
+  font-size: 0.9rem;
 }
 .nav a:hover {
   background-color: #e76f51;
@@ -36,25 +57,29 @@ body {
 .hero {
   text-align: center;
   color: black;
-  margin-top: 100px;
-  font-size: 30px;
-  width: 100%;
+  margin: 5rem auto 2rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  font-size: clamp(2rem, 6vw, 3rem);
 }
 
+/* Inspiration Section */
 .inspiration {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   text-align: left;
-  max-width: 1200px;
+  width: 90%;
+  max-width: 1400px;
   margin: auto;
-  gap: 30px;
+  gap: 50px;
 }
 
 .inspiration img {
-  width: 600px;
-  height: 450px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 600px; /* or any preferred max-width */
+  height: auto; /* let height adjust automatically */
+  object-fit: cover; /* optional: crops to fill container, but maintains ratio */
   margin: 20px 0;
   flex-shrink: 0;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -62,25 +87,20 @@ body {
 }
 
 .inspiration-text {
-  font-size: 1.1rem;
-  line-height: 1.4;
-}
-
-.inspiration-heading {
-  font-size: 2rem;
-  margin-bottom: 15px;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .inspiration-text button {
   background-color: #f4a261;
   color: white;
   border: none;
-  padding: 12px 30px;
-  margin-left: 30px;
-  cursor: pointer;
-  font-size: 18px;
+  padding: 0.8rem 2rem;
   border-radius: 8px;
-  margin-top: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
 }
 
 .inspiration-text button:hover {
@@ -89,22 +109,16 @@ body {
 
 /* About Section */
 .about-section {
+  width: 90%;
+  max-width: 800px;
+  margin: 5rem auto;
+  padding: 2rem;
   display: flex;
   align-items: center;
+  background-color: white;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: white;
   border-radius: 10px;
-}
-
-.about-section h1 {
-  font-size: 2rem;
-  color: black;
-  margin-bottom: 10px;
 }
 
 .about-section img {
@@ -112,157 +126,115 @@ body {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 1rem 0;
   border: 2px solid black;
-}
-
-.about-section p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  padding: 0 20px;
 }
 
 /* Video Section */
 .video-section {
-  display: flex;
-  margin-top: 65px;
-  flex-direction: column;
+  width: 90%;
+  max-width: 1000px;
+  margin: 5rem auto;
   align-items: center;
-  padding: 0 66px;
-  text-align: center;
-  aspect-ratio: 16/9; /* Allows the video to scale properly */
-}
-
-.video-section h1 {
-  font-size: 30px;
-  color: black;
-  margin-top: 30px;
 }
 
 .video-section iframe {
-  width: 80%;
-  max-width: 800px;
-  height: 450px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 56.25vw;
+  max-height: 562px;
   border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact me Section */
+/* Contact Section */
 .contact-page {
   text-align: center;
   background: black;
   color: white;
-  padding: 34px 17px;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
 }
+
 .icons {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
-.contact-page h2 {
-  margin-bottom: 10px;
-}
-.contact-page p {
-  font-size: 20px;
-}
+
 .icons a {
   color: white;
-  font-size: 24px;
-  margin: 10px;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
 }
+
 .icons a:hover {
   color: #f4a261;
 }
 
-/* Small Screens */
-@media (max-width: 1024px) {
-  .inspiration {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .inspiration img {
-    max-width: 80%;
-  }
-
-  .video-section h1 {
-    font-size: 24px;
-  }
-
-  .about-section {
-    max-width: 95%;
+/* Media Queries */
+@media (min-width: 768px) {
+  .nav {
+    padding: 0.8rem 10%;
   }
 
   .nav a {
-    padding: 8px 15px;
+    font-size: 1rem;
   }
-}
 
-/* Mobile Phones */
-@media (max-width: 768px) {
   .hero {
-    font-size: 24px;
-    padding: 15px;
+    margin-top: 6rem;
   }
 
   .inspiration {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem;
   }
 
   .inspiration img {
-    max-width: 100%;
-    height: auto;
+    width: 50%;
+    max-width: 600px;
   }
 
   .inspiration-text {
-    text-align: center;
-    padding: 0 20px;
-  }
-
-  .about-section p {
-    font-size: 1rem;
-    padding: 10px;
-  }
-
-  .contact-page p {
-    font-size: 16px;
-  }
-
-  .icons {
-    gap: 10px;
+    width: 50%;
+    padding: 0 2rem;
   }
 }
 
-/* Small Mobile Screens */
+@media (min-width: 1024px) {
+  .inspiration {
+    gap: 3rem;
+    max-width: 1400px;
+  }
+}
+
 @media (max-width: 480px) {
-  .hero {
-    font-size: 20px;
-    margin-top: 80px;
-  }
-
-  .video-section h1 {
-    font-size: 22px;
-  }
-
   .nav {
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem;
   }
 
   .nav a {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.8rem;
   }
 
-  .icons a {
-    font-size: 18px;
+  .about-section {
+    padding: 1rem;
+  }
+
+  .about-section img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .video-section {
+    margin-top: 4rem;
   }
 }
