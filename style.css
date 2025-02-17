@@ -176,6 +176,7 @@ p {
 }
 
 /* Media Queries */
+These are to ensure responsiveness for different screens that the users might be viewing the website on
 @media (min-width: 768px) {
   .nav {
     padding: 0.8rem 10%;
